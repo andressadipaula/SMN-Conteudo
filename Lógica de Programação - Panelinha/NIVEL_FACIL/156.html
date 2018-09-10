@@ -1,0 +1,38 @@
+<script>
+//15)	Faça um algoritmo para somar duas matrizes.
+
+
+var contador = 1;
+    var matriz1 = [];
+    for(var i = 0; i < 5; i++){
+        matriz1[i] = [];
+        for(var j = 0; j < 5; j++){
+            matriz1[i][j] = contador;
+            contador++;
+        }
+    }
+
+    contador = 2;
+    var matriz2 = [];
+    for(var i = 0; i < 5; i++){
+        matriz2[i] = [];
+        for(var j = 0; j < 5; j++){
+            matriz2[i][j] = contador;
+            contador++;
+        }
+    }
+
+    var matrizSoma = [];
+    for(var i = 0; i < 5; i++){
+        matrizSoma[i] = [];
+        for(var j = 0; j < 5; j++){
+            matrizSoma[i][j] = matriz1[i][j] + matriz2[i][j];
+        }
+    }
+
+    console.log(matriz1);
+    console.log(matriz2);
+    console.log(matrizSoma);
+
+
+</script>

@@ -1,0 +1,30 @@
+<script>
+//15)	Faça um algoritmo para somar duas matrizes.
+function Teste(){
+var i,termo, matriz1 = [ ];
+var i,termo, matriz2 = [ ];
+
+for (i = 0; i < 4; i++) {
+termo = parseInt(prompt ("Informe os 4 números da PRIMEIRA matriz: "));
+matriz1.push(termo);
+console.log(matriz1[i]);
+}
+for (i = 0; i < 4; i++) {
+termo = parseInt(prompt ("Agora os 4 números da SEGUNDA matriz: "));
+matriz2.push(termo);
+console.log(matriz2[i]);
+}
+var soma = [ ];
+for (i=0; i < 4; i++ ) {
+	var res = matriz1[i] + matriz2[i];
+	soma.push(res);
+	console.log(soma[i]);
+	
+};
+console.log(soma);
+}
+
+Teste();
+
+
+</script>

@@ -1,0 +1,134 @@
+<script>
+
+    	/*Escreva um programa que converta diversos tipos de moedas, 
+        primeiramente o usuário deve fornecer o valor e informar qual a moeda 
+        e por último escolher para qual moeda deseja fazer a conversão, 
+        os tipos de moedas são dólar americano, euro, iene japonês, libra esterlina, 
+        peso argentino. (para fazer as conversões, utilizem valores atuais, procurem na internet)*/
+
+        var valor,moeda_origem, moeda_conversao, conversao;           
+              
+        valor= parseInt(prompt("Digite o valor: "));
+        moeda_origem=(prompt("Digite a moeda origem:"));
+        moeda_conversao=(prompt("Digite a moeda de conversão:"));  
+
+        //*****************************************************************************
+        //DE TODOS PARA EURO
+        //de dolar para euro= 1* 0.86
+        if(moeda_origem=="dolar" && moeda_conversao=="euro"){
+            valor=valor*0.86;
+        }
+        //de iene para euro= 1* 0.0077
+        else if(moeda_origem=="iene" && moeda_conversao=="euro"){
+            valor=valor*0.0077;
+        }
+
+        //de libra para euro= 1* 1.10
+        else if(moeda_origem=="libra" && moeda_conversao=="euro"){
+            valor=valor*1.10;
+        }
+
+         //de argentino para euro= 1* 0.028
+         else if(moeda_origem=="argentino" && moeda_conversao=="euro"){
+            valor=valor*0.028;
+        }
+        //*****************************************************************************
+
+           //*****************************************************************************
+        //DE TODOS PARA DOLAR
+        //de euro para dolar= 1* 1.17
+        else if(moeda_origem=="euro" && moeda_conversao=="dolar"){
+            valor=valor/0.86;
+        }
+        //de iene para dolar= 1* 0.0090
+        else if(moeda_origem=="iene" && moeda_conversao=="dolar"){
+            valor=valor*0.0090;
+        }
+
+        //de libra para dolar= 1* 1.29
+        else if(moeda_origem=="libra" && moeda_conversao=="dolar"){
+            valor=valor*1.29;
+        }
+
+         //de argentino para dolar= 1* 0.032
+         else if(moeda_origem=="argentino" && moeda_conversao=="dolar"){
+            valor=valor*0.032;
+        }
+        //*****************************************************************************
+
+        
+        //*****************************************************************************
+        //DE TODOS PARA IENE
+        //de dolar para iene= 1* 111,15
+        else if(moeda_origem=="dolar" && moeda_conversao=="iene"){
+            valor=valor*111.15;
+        }
+        //de euro para iene= 1* 129,81
+        else if(moeda_origem=="euro" && moeda_conversao=="iene"){
+            valor=valor*129,81;
+        }
+
+        //de libra para iene= 1* 143,31
+        else if(moeda_origem=="libra" && moeda_conversao=="iene"){
+            valor=valor*143.31;
+        }
+
+         //de argentino para iene= 1* 3.59
+         else if(moeda_origem=="argentino" && moeda_conversao=="iene"){
+            valor=valor*3.59;
+        }
+        //*****************************************************************************
+
+        //*****************************************************************************
+        //DE TODOS PARA LIBRA
+        //de dolar para libra= 1* 0,78
+        else if(moeda_origem=="dolar" && moeda_conversao=="libra"){
+            valor=valor*0.78;
+        }
+        //de euro para libra= 1* 0,91
+        else if(moeda_origem=="euro" && moeda_conversao=="libra"){
+            valor=valor*0.91;   
+        }
+
+        //de iene para libra= 1* 0,0070
+        else if(moeda_origem=="iene" && moeda_conversao=="libra"){
+            valor=valor*0.0070;
+        }
+
+         //de argentino para libra= 1* 0.025
+         else if(moeda_origem=="argentino" && moeda_conversao=="libra"){
+            valor=valor*0.025;
+        }
+        //*****************************************************************************
+
+        //*****************************************************************************
+        //DE TODOS PARA PESO
+        //de dolar para argentino= 1* 30,95
+        else if(moeda_origem=="dolar" && moeda_conversao=="argentino"){
+            valor=valor*30.95;
+        }
+        //de euro para argentino= 1* 36,17
+        else if(moeda_origem=="euro" && moeda_conversao=="argentino"){
+            valor=valor*36.17;   
+        }
+
+        //de iene para argentino= 1* 0,28
+        else if(moeda_origem=="iene" && moeda_conversao=="argentino"){
+            valor=valor*0.28;
+        }
+
+         //de libra para argentino= 1* 39.91
+         else if(moeda_origem=="libra" && moeda_conversao=="argentino"){
+            valor=valor*39.91;
+        }
+        //*****************************************************************************
+
+        
+        document.write("Valor convertido: ", valor);
+        
+
+       
+
+            
+    
+</script>

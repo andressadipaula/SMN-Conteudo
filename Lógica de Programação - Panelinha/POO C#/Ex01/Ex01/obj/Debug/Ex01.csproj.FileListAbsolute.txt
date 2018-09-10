@@ -1,0 +1,7 @@
+E:\POO C#\Ex01\Ex01\bin\Debug\Ex01.exe.config
+E:\POO C#\Ex01\Ex01\bin\Debug\Ex01.exe
+E:\POO C#\Ex01\Ex01\bin\Debug\Ex01.pdb
+E:\POO C#\Ex01\Ex01\obj\Debug\Ex01.csprojAssemblyReference.cache
+E:\POO C#\Ex01\Ex01\obj\Debug\Ex01.csproj.CoreCompileInputs.cache
+E:\POO C#\Ex01\Ex01\obj\Debug\Ex01.exe
+E:\POO C#\Ex01\Ex01\obj\Debug\Ex01.pdb

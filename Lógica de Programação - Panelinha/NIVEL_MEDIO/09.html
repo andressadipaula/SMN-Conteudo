@@ -1,0 +1,35 @@
+<script>
+    /*
+        Seja N um número quadrado perfeito. Se somarmos os 
+        números ímpares consecutivos (1 + 3 + 5 +7 + 9 + ...)
+        até que esta soma seja igual a N, o número M de 
+        termos somados será igual a raiz quadrada de N.
+        Exemplo: N = 16 = 1 + 3 + 5 + 7, M = 4 termos.
+        Logo, a raiz quadrada de 16 é 4. Fazer um programa para
+        ler um número inteiro e positivo N e responder se N é 
+        quadrado perfeito.
+    */    
+
+    var n = parseInt(prompt("Numero Inteiro: "));
+
+    var soma = 0;
+    var raiz = 0;
+    var nImpar = 1;
+    do{
+        //Verifica se nImpar é um número impar
+        if(nImpar % 2 != 0){
+            soma += nImpar; //pega valor de soma e acrescenta nImpar
+            raiz++; //numero de termos somados. Logo é a raiz quadrada de n
+            nImpar++; //passa para proximo numero
+        }else{
+            nImpar++;
+        }
+    }while(soma < n); //Repete enquanto a soma for menor que n
+
+    
+    if(soma == n){//Verifica se a soma é igual a n. Se sim, então n é quadrado perfeito
+        document.write("Número " + n + " é um quadrado perfeito <br> Raiz quadrada de " + n + " é " + raiz);
+    }else{//Se não (soma foi maior que n) então não é quadrado perfeito
+        document.write("Número " + n + " não é um quadrado perfeito!");
+    }
+</script>

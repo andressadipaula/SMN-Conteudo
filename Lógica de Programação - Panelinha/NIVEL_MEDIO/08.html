@@ -1,0 +1,75 @@
+<script>
+    /*
+        8)	Monte um algoritmo que leia as vendas de cada vendedor
+        durante uma semana, armazenando-as em uma matriz 3x5. Ao final informe:
+        a) Faturamento diário da empresa;
+        b) faturamento semanal da empresa;
+        c) faturamento semanal por vendedor
+        d) Informar qual o vendedor de maior faturamento semanal
+
+    */
+
+    var matriz = [];
+    var i,j;
+    var vendedores=["Lael","Maria","Andressa"];
+    var dias_semana=["Segunda","Terça","Quarta","Quinta","Sexta"];
+
+    //Cria a Matriz
+    for(i = 0; i < 3; i++){
+        matriz[i] = [];
+        for(j = 0; j < 5; j++){
+            matriz[i][j] = parseInt(prompt("Digite um valor: "));
+            console.log("Matriz ",matriz[i][j]); 
+        }
+    }
+
+    //Faturamento diario
+    
+    var faturamento_semanal=0;   
+    for(j=0; j<5;j++){
+        var faturamento_diario1=0;
+             
+        for(i=0; i<3;i++){
+            faturamento_diario1=faturamento_diario1+parseInt(matriz[i][j]);
+        }
+            console.log("Faturamento da : ", dias_semana[j], " foi ", faturamento_diario1);
+            faturamento_semanal=faturamento_semanal+faturamento_diario1;
+    }
+    
+    //Faturamento Semanal
+    console.log("Semanal: ",faturamento_semanal);
+
+    var maior=0;
+    //Faturamento Semanal por Vendedor  
+    for(i=0; i<3;i++){
+       
+        var faturamento_semanal_vendedor=0;
+        
+        for(j=0;j<5;j++){
+            faturamento_semanal_vendedor=faturamento_semanal_vendedor+parseInt(matriz[i][j]);            
+        }
+
+        if(faturamento_semanal_vendedor>maior){
+            maior=faturamento_semanal_vendedor;
+            var nome_vendedor=[i];
+        }
+        console.log("Faturamento do(a) Vendedor(a)", vendedores[i],"foi: ", faturamento_semanal_vendedor);
+        
+
+        }
+        console.log("Vendedor de maior Faturamento Semanal: ", vendedores[nome_vendedor]);
+
+   
+
+    
+
+    
+    console.log(matriz);
+
+   
+    
+    
+
+
+
+    </script>

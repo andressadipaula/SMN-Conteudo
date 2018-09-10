@@ -1,0 +1,7 @@
+E:\POO C#\Projeto_01\Projeto_01\bin\Debug\Projeto_01.exe.config
+E:\POO C#\Projeto_01\Projeto_01\bin\Debug\Projeto_01.exe
+E:\POO C#\Projeto_01\Projeto_01\bin\Debug\Projeto_01.pdb
+E:\POO C#\Projeto_01\Projeto_01\obj\Debug\Projeto_01.csprojAssemblyReference.cache
+E:\POO C#\Projeto_01\Projeto_01\obj\Debug\Projeto_01.csproj.CoreCompileInputs.cache
+E:\POO C#\Projeto_01\Projeto_01\obj\Debug\Projeto_01.exe
+E:\POO C#\Projeto_01\Projeto_01\obj\Debug\Projeto_01.pdb

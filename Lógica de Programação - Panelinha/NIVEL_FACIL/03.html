@@ -1,0 +1,26 @@
+<script>
+
+    	// Escreva um programa que receba 3 notas e calcule a média, 
+        // e depois verifique se o aluno foi reprovado (dado que para conseguir 
+        // aprovação o aluno tem que ter media maior que 6)
+
+        var nota1,nota2,nota3,media;
+
+        nota1=prompt("Digite a nota 1: ");
+        nota2=prompt("Digite a nota 2: ");
+        nota3=prompt("Digite a nota 3: ");
+
+        media=(parseInt(nota1)+parseInt(nota2)+parseInt(nota3))/3;
+        document.write(media);
+
+
+        if(media>=6){
+            document.write("O Aluno esta APROVADO!");
+        }
+        else{
+            document.write("O aluno esta REPROVADO!");
+        }
+
+            
+    
+</script>

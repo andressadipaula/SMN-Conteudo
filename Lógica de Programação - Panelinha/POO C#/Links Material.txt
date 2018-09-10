@@ -1,0 +1,5 @@
+Leonardo:
+https://www.devmedia.com.br/polimorfismo-classes-abstratas-e-interfaces-fundamentos-da-poo-em-java/26387
+
+Thiago
+https://www.caelum.com.br/apostila-csharp-orientacao-objetos/heranca/

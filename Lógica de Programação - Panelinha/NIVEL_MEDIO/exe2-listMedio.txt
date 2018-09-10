@@ -1,0 +1,23 @@
+vetor = [1,2,5,2,4,4]
+repete = []
+cont = 0
+aux = []
+
+for i in vetor:
+  for j in vetor:
+    if j == i:
+      cont += 1
+      
+  if cont > 2:
+    repete.append(i)
+    cont = 0
+
+for i in vetor:
+  aux.append(i)
+
+for i in repete:
+    aux.remove(i)
+
+print (vetor)
+print (repete)
+print (aux)

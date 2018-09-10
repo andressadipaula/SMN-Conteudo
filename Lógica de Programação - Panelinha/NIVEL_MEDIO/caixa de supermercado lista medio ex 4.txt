@@ -1,0 +1,52 @@
+// Suponha que um caixa disponha apenas de notas de 1, 10 e 100 reais. Considerando 
+// que alguém está pagando uma compra, escreva um algoritmo que mostre o número mínimo 
+// de notas que o caixa deve fornecer como troco. Mostre também: o valor da compra, o 
+// valor do troco e a quantidade de cada tipo de nota do troco. Suponha que o sistema 
+// monetário não utilize moedas.
+
+//Declaração das variáveis
+var compra = 0; 
+var pago = 0; 
+var troco = 0;
+var centena = 0;
+var dezena = 0;
+var unidade = 0;
+
+
+
+
+//coleta de valores
+compra = prompt("Digite o valor da compra");
+pago = prompt("Digite o valor pago");
+troco = pago-compra;
+
+//condição se pagar menos que o valor da compra
+while(troco<0){
+    pago = prompt("Valor pago deve ser maior ou igual ao da compra -> " + compra);
+    troco = pago-compra;
+}
+console.log("troco R$ " + troco );
+console.log("-----------------------");
+
+//tratamento do valor centeza, depois dezena e o que sobra vai para unidade
+
+if (troco>=100){
+  while(troco>=100){
+    troco = troco-100;
+    centena++
+  }  
+}
+
+if (troco>=10){
+  while(troco>=10){
+    troco = troco-10;
+    dezena++;
+  }
+}
+
+//só sobraram as unidades!
+unidade = troco;
+
+console.log("Notas de 100 -> " + centena);
+console.log("Notas de 10 -> " + dezena);
+console.log("Notas de 1 -> " + unidade);
